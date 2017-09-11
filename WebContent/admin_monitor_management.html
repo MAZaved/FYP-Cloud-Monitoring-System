@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<!-- @author Michael Mullarkey (112457292) -->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Prototype</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/heroic-features.css" rel="stylesheet">
+	<link href="css/monitoring.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="admin_index.html">Admin</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+					
+                    <li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span></a>
+					  <ul class="dropdown-menu">
+						<li><a href="user_config.html">Create User</a></li>
+						<li><a href="user_management.html">User Management</a></li>
+						
+					  </ul>
+					</li>
+					
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Monitor <span class="caret"></span></a>
+					  <ul class="dropdown-menu">
+						<li><a href="admin_monitor_management.html">Monitor Management</a></li>
+					  </ul>
+					</li>
+				</ul>	
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<!-- Page Content -->
+    <div class="container">
+
+        <!-- Jumbotron Header -->
+        <header class="jumbotron hero-spacer">
+            <div class="row">
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Monitor Name</label>
+			  <p style="font-size:120%">VM1-CPU</p>
+			</div>
+			
+			<div class="col-md-2">
+			  <label class="control-label" for="focusedInput">Enabled/Disabled</label>
+			  <div class="progress progress-striped">
+			  <div class="progress-bar progress-bar-danger" style="width: 100%"></div>
+			</div>
+			<p style="font-size: 90%">Error - Memory Overflow</p>
+			</div>
+			
+			<div class="col-md-2 col-md-offset-1">
+			  <label class="control-label" for="focusedInput">Owner</label>
+			  <p style="font-size:120%">mm37</p>
+			</div>
+			
+			<div class="col-md-1">
+			 <button type="button" class="btn btn-success btn-md"><span class="glyphicon glyphicon-play"></span></button>
+			</div>
+			
+			<div class="col-md-1">
+			 <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Edit</button>
+			</div>
+		</div>
+		
+	<hr>
+	
+		<div class="row">
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Monitor Name</label>
+			  <p style="font-size:120%">VM23-GPU</p>
+			</div>
+			
+			<div class="col-md-2 ">
+			  <label class="control-label" for="focusedInput">Enabled/Disabled</label>
+			  <div class="progress progress-striped active">
+			  <div class="progress-bar progress-bar-success" style="width: 100%"></div>
+			</div>
+			</div>
+			
+			<div class="col-md-2 col-md-offset-1">
+			  <label class="control-label" for="focusedInput">Owner</label>
+			  <p style="font-size:120%">john2</p>
+			</div>
+			
+			<div class="col-md-1">
+			 <button type="button" class="btn btn-success btn-md"><span class="glyphicon glyphicon-pause"></span></button>
+			</div>
+			
+			<div class="col-md-1">
+			 <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal2">Edit</button>
+			</div>
+		</div>
+		
+		
+		<hr>
+	
+		<div class="row">
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Monitor Name</label>
+			  <p style="font-size:120%">VM2-Mem</p>
+			</div>
+			
+			<div class="col-md-2">
+			  <label class="control-label" for="focusedInput">Enabled/Disabled</label>
+			  <div class="progress progress-striped">
+			  <div class="progress-bar progress-bar-danger" style="width: 100%"></div>
+			</div>
+			<p style="font-size: 90%">Error - Memory Overflow</p>
+			</div>
+			
+			<div class="col-md-2 col-md-offset-1">
+			  <label class="control-label" for="focusedInput">Owner</label>
+			  <p style="font-size:120%">simon4</p>
+			</div>
+			
+			<div class="col-md-1">
+			 <button type="button" class="btn btn-success btn-md"><span class="glyphicon glyphicon-play"></span></button>
+			</div>
+			
+			<div class="col-md-1">
+			 <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal3">Edit</button>
+			</div>
+			
+			<div class="col-md-1">
+			 <button type="button" class="btn btn-warning btn-md" data-toggle="modal" data-target="#myModalAgent">Add Agent</button>
+			</div>
+		</div>
+		
+        </header>
+
+        <hr>
+		
+		<!-- Modal -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">VM1-CPU</h4>
+			  </div>
+			  <div class="modal-body">
+			  
+			  <div class="row" style="margin-top: 2%;">
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Host</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Port</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">User Name</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Password</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+		</div> 
+		<hr>
+		
+		<div class="row" style="margin-top: 6%;">
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Monitor Name</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Select Tool</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Url/IP</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Interval</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+		</div> 
+		
+		<div class="row" style="margin-top: 6%;">
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Duration</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Web Url</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+		</div> 
+				<div style="margin-top: 5%" class="checkbox">
+				  <label>
+					<input type="checkbox"> Enable
+				  </label>
+				</div>
+				<button class="btn btn-info">Remove Monitor</button>
+			  </div>
+			  <div class="modal-footer">
+				<button class="btn btn-default" data-dismiss="modal" type="reset">Close</button>
+				<button class="btn btn-primary" type="submit">Save</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+		
+		<div id="myModal2" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">VM23-GPU</h4>
+			  </div>
+			   <div class="modal-body">
+			  
+			  <div class="row" style="margin-top: 2%;">
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Host</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Port</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">User Name</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Password</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+		</div> 
+		<hr>
+		
+		<div class="row" style="margin-top: 6%;">
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Monitor Name</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Select Tool</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Url/IP</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Interval</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+		</div> 
+		
+		<div class="row" style="margin-top: 6%;">
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Duration</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Web Url</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+		</div> 
+				<div style="margin-top: 5%" class="checkbox">
+				  <label>
+					<input type="checkbox"> Enable
+				  </label>
+				</div>
+				<button class="btn btn-info">Remove Monitor</button>
+			  </div>
+			  <div class="modal-footer">
+				<button class="btn btn-default" data-dismiss="modal" type="reset">Close</button>
+        <button class="btn btn-primary" type="submit">Save</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+		
+		<div id="myModal3" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">VM2-Mem</h4>
+			  </div>
+			   <div class="modal-body">
+			  
+			  <div class="row" style="margin-top: 2%;">
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Host</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Port</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">User Name</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Password</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+		</div> 
+		<hr>
+		
+		<div class="row" style="margin-top: 6%;">
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Monitor Name</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Select Tool</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Url/IP</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Interval</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+		</div> 
+		
+		<div class="row" style="margin-top: 6%;">
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Duration</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Web Url</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+		</div> 
+				<div style="margin-top: 5%" class="checkbox">
+				  <label>
+					<input type="checkbox"> Enable
+				  </label>
+				</div>
+				<button class="btn btn-info">Remove Monitor</button>
+			  </div>
+			  <div class="modal-footer">
+				<button class="btn btn-default" data-dismiss="modal" type="reset">Close</button>
+        <button class="btn btn-primary" type="submit">Save</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+
+		<div id="myModalAgent" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Add Agent</h4>
+			  </div>
+			   <div class="modal-body">
+			  
+		<div class="row" style="margin-top: 2%;">
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Host Name</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+			<div class="col-md-3">
+			  <label class="control-label" for="focusedInput">Port</label>
+			  <input class="form-control input-sm" id="focusedInput" type="text" value="">
+			</div>
+			
+		</div> 
+		
+				<div style="margin-top: 5%" class="checkbox">
+				  <label>
+					<input type="checkbox"> Enable
+				  </label>
+				</div>
+				<button class="btn btn-info">Remove Monitor</button>
+			  </div>
+			  <div class="modal-footer">
+				<button class="btn btn-default" data-dismiss="modal" type="reset">Close</button>
+        <button class="btn btn-primary" type="submit">Save</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Michael Mullarkey 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
