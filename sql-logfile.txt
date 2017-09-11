@@ -1,0 +1,1 @@
+Sun Feb 14 22:20:47 GMT 2016 jdbc:mysql://cs1.ucc.ie/2016_mm37 caused error Access denied for user 'mm37'@'178.167.254.141' (using password: YES) Error dbclass.setup.2
