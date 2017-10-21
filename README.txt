@@ -1,3 +1,6 @@
+ My final year project involved researching and creating a free and open source cloud monitoring system that allowed users to download and connect to their own cloud environment (OpenStack, AWS etc.). This application then allowed the user to create and configure cloud monitoring tools, drill down into the data and produce real time and static graphs to represent data, along with a host of other functionality. The end product provided a highly in intuitive, configurable and lightweight solution to cloud monitoring systems. This project was also awarded the best open source project by IBM.
+ 
+
 -----Michael Mullarkey 112457292-------
 -----Instructions for Setup----------
 
